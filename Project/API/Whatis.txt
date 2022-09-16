@@ -1,0 +1,19 @@
+API -> Application programming interface.
+API is used to fetch data from the server to send it to the client side.
+Application -> the place it is used in.
+programming -> the function is it used for.
+interface -> the mode of communication between the client and server or front end to backend.
+
+
+there are 4 types of API 
+open source, private, partner, composite.
+
+language in which the API communicate.
+XML-rpc, JSON-rpc, SOAP, REST.
+
+REST -> representational state transfer.
+when the client makes a request to the server the call is made by the api with appropriate headers and cookies and with proper authorization.
+when the api get the request the api then fetch the data from the server and responds to the clinet request with response with data in the body of the response.
+
+API does 4 things.
+create, read,update, dalete

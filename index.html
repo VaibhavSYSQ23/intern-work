@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <div>
+            <h1>Tic Tac Toe</h1>
+            <div>
+                <h3>Player '<span id="turn-text">O</span>' moves</h3>
+                <form>
+                    <div class="grid-box">
+                        <input type="button" class="right-border" id="1" value="">
+                        <input type="button" class="right-border" id="2" value="">
+                        <input type="button" class="bottom-border" id="3" value="">
+                        <input type="button" class="right-border" id="4" value="">
+                        <input type="button" class="right-border" id="5" value="">
+                        <input type="button" class="bottom-border" id="6" value="">
+                        <input type="button" class="onlyright-border" id="7" value="">
+                        <input type="button" class="onlyright-border" id="8" value="">
+                        <input type="button" class="" id="9" value="">
+                    </div>
+                </form>
+            </div>
+            <button onclick="myReset()">reset</button>
+        </div>
+    </div>
+    <script>
+        var turn = 0;
+
+        document.getElementById('1').onclick = function () {
+            if (document.getElementById('1').value === '') {
+                document.getElementById('1').value = turn ? 'X' : 'O';
+
+                turn = !turn;
+                document.getElementById('turn-text').innerHTML = turn ? 'X' : 'O';
+                var winCase = g_Logic();
+                if (winCase) {
+                    alert(!turn ? 'X' : 'O' + " Won the game")
+                    myReset();
+                }
+            }
+        }
+        document.getElementById('2').onclick = function () {
+            if (document.getElementById('2').value === '') {
+                document.getElementById('2').value = turn ? 'X' : 'O';
+                turn = !turn;
+                document.getElementById('turn-text').innerHTML = turn ? 'X' : 'O';
+                var winCase = g_Logic();
+                if (winCase) {
+                    alert(!turn ? 'X' : 'O' + " Won the game")
+                    myReset();
+                }
+
+            }
+        }
+        document.getElementById('3').onclick = function () {
+            if (document.getElementById('3').value === '') {
+                document.getElementById('3').value = turn ? 'X' : 'O';
+                turn = !turn;
+                document.getElementById('turn-text').innerHTML = turn ? 'X' : 'O';
+                var winCase = g_Logic();
+                if (winCase) {
+                    alert(!turn ? 'X' : 'O' + " Won the game")
+                    myReset();
+                }
+            }
+        }
+        document.getElementById('4').onclick = function () {
+            if (document.getElementById('4').value === '') {
+                document.getElementById('4').value = turn ? 'X' : 'O';
+                turn = !turn;
+                document.getElementById('turn-text').innerHTML = turn ? 'X' : 'O';
+                var winCase = g_Logic();
+                if (winCase) {
+                    alert(!turn ? 'X' : 'O' + " Won the game")
+                    myReset();
+                }
+            }
+        }
+        document.getElementById('5').onclick = function () {
+            if (document.getElementById('5').value === '') {
+                document.getElementById('5').value = turn ? 'X' : 'O';
+                turn = !turn;
+                document.getElementById('turn-text').innerHTML = turn ? 'X' : 'O';
+                var winCase = g_Logic();
+                if (winCase) {
+                    alert(!turn ? 'X' : 'O' + " Won the game")
+                    myReset();
+                }
+            }
+        }
+        document.getElementById('6').onclick = function () {
+            if (document.getElementById('6').value === '') {
+                document.getElementById('6').value = turn ? 'X' : 'O';
+                turn = !turn;
+                document.getElementById('turn-text').innerHTML = turn ? 'X' : 'O';
+                var winCase = g_Logic();
+                if (winCase) {
+                    alert(!turn ? 'X' : 'O' + " Won the game")
+                    myReset();
+                }
+            }
+        }
+        document.getElementById('7').onclick = function () {
+            if (document.getElementById('7').value === '') {
+                document.getElementById('7').value = turn ? 'X' : 'O';
+                turn = !turn;
+                document.getElementById('turn-text').innerHTML = turn ? 'X' : 'O';
+                var winCase = g_Logic();
+                if (winCase) {
+                    alert(!turn ? 'X' : 'O' + " Won the game")
+                    myReset();
+                }
+            }
+        }
+        document.getElementById('8').onclick = function () {
+            if (document.getElementById('8').value === '') {
+                document.getElementById('8').value = turn ? 'X' : 'O';
+                turn = !turn;
+                document.getElementById('turn-text').innerHTML = turn ? 'X' : 'O';
+                var winCase = g_Logic();
+                if (winCase) {
+                    alert(!turn ? 'X' : 'O' + " Won the game")
+                    myReset();
+                }
+            }
+        }
+        document.getElementById('9').onclick = function () {
+            if (document.getElementById('9').value === '') {
+                document.getElementById('9').value = turn ? 'X' : 'O';
+                turn = !turn;
+                document.getElementById('turn-text').innerHTML = turn ? 'X' : 'O';
+                var winCase = g_Logic();
+                if (winCase) {
+                    alert(!turn ? 'X' : 'O' + " Won the game")
+                    myReset();
+                }
+            }
+        }
+        function myReset() {
+            for (let i = 1; i <= 9; i++) {
+                document.getElementById(i).value = '';
+            }
+        }
+
+        function g_Logic() {
+            const Success = [[1, 2, 3], [4, 5, 6], [7, 8, 9], [1, 4, 7], [2, 5, 8], [3, 6, 9], [1, 5, 9], [3, 5, 7]]
+
+            for (var i = 0; i < Success.length; i++) {
+                if ((document.getElementById(Success[i][0]).value === 'X' || document.getElementById(Success[i][0]).value === 'O') && document.getElementById(Success[i][0]).value === document.getElementById(Success[i][1]).value && document.getElementById(Success[i][1]).value === document.getElementById(Success[i][2]).value) {
+                    return true;
+                }
+            }
+        }
+
+    </script>
+</body>
+
+</html>

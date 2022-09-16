@@ -1,0 +1,31 @@
+body{
+    text-align: center
+}
+.grid-box {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 400px;
+}
+.grid-box > input {
+    aspect-ratio: 1;
+    
+}
+input{
+    background-color:transparent;
+    border-color: transparent;
+}
+.right-border{
+    border-width: medium;
+    border-right-color: rgb(245, 3, 3);
+    border-bottom-color: rgb(245, 3, 3);
+    
+}
+.bottom-border{
+    border-bottom-color: rgb(245, 3, 3);
+    border-width: medium;
+}
+.onlyright-border{
+    border-right-color: rgb(245, 3, 3);
+    border-width: medium;
+}
