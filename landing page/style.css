@@ -1,0 +1,70 @@
+   
+    .my-nav{
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    }
+    .carousel-item {
+      height: 100vh;
+      background: no-repeat center center scroll;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+    
+    nav{
+    background: transparent;
+    text-align: center;
+    }
+    a.nav-link.dropdown{
+        margin-bottom: 10px;
+    }
+    a.navbar-brand{
+    display: block;
+    margin-right: 50px;
+    }
+    a.dropdown-item{
+       display: block;
+       text-align: center;
+    }
+    li.nav-item:hover ul.dropdown-menu{
+        display: block;
+        border-radius: 15px;
+    }
+    .d-block{
+       position: absolute;
+       height: 100vh;
+       width: 100%;
+    }
+   
+    
+    
+    div{
+    color: aliceblue;
+    }
+    a{
+    color: aliceblue;
+    }
+    .navbar-collapse{
+    flex-grow: 0.6;
+    }
+    .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl
+    {
+    width: 70%;
+    }
+    .carousel-caption{
+        top: 45%;
+    }
+    .carousel-caption p {
+        margin-bottom: 6rem;
+    }
+    .btn{
+        background-color: rgb(46, 135, 252);
+    }
+    #waves{
+        position: relative;
+        z-index: 10;
+        width: 100%;
+        margin-top: -10%;
+    }

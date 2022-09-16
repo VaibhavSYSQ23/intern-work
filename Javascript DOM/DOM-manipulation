@@ -1,0 +1,26 @@
+we can manipulate html and css with the help of Javascript DOM.
+
+// GetElementById()
+-> this code will select the html tag with the help of the id that is given to it.
+const title = document.getElementById(the-id-name)
+console.log(title);
+
+// GetElementByClassName()
+-> this code will select the html tag with the help of the class name that it have.
+const listItem = document.getElementByClassName(the-class-name);
+console.log(listItem);
+
+// GetElementByTagName()
+-> this code will select the tag directly without the help of the id or class. it will select all the tags with the name passed in the argument.
+const listItem = document.getElementByTagName(the-html-tag);
+console.log(listItem);
+
+// querySelector()
+-> this code will show the first tag name that appears in the html code. this will show only once even if the html tag appears multiple time.
+const container = document.querySelector(the-html-tag);
+console.log(container);
+
+// querySelectorAll()
+-> this code will display all the html tags even if the tag appear multiple time. 
+const container = document.querySelectorAll(the-html-tag);
+console.log(container);

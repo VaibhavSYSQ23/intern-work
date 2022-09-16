@@ -1,0 +1,67 @@
+#navImage{
+    background-color: red;
+}
+/*navigation appearence*/
+nav{
+    background: transparent;
+    text-align: center;
+    }
+/*navigation icon*/
+a.navbar-brand{
+    display: block;
+    margin-right: 50px;
+    }
+/*navigation over the carousel*/
+    .my-nav{
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    }
+/*carousel item display*/
+    .carousel-item {
+    height: 100vh;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    }
+/*carousel dropdown item*/
+a.dropdown-item{
+    display: block;
+ }
+/*carousel dropdown on hover*/
+li.nav-item:hover ul.dropdown-menu{
+    display: block;
+    border-radius: 5px;
+}
+/*this is the image of carousel*/
+.d-block{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+}
+/**/
+
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
